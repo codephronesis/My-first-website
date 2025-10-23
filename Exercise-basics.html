@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox-exercise</title>
+    <style>
+        p{
+            margin: 5px;
+            
+        }
+        .cat-pic {
+            border-radius: 70px;
+            width: 40px;
+        }
+        .preview {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .profile-pc {
+           width: 50px; 
+          align-self: start;
+           margin-top: 4px;
+        }
+        .preview-info {
+           
+            width: 350px;
+        }
+        .blur {
+          color: gray;
+        }
+        .split-btn{
+            display: flex;
+            width: 300px;
+            height: 70px;
+            overflow: hidden;
+           
+            
+            padding:0;
+            border-radius: 30px;
+            margin-left: 55px;
+        }
+        .text {
+           flex: 2;
+           display: flex;
+            flex-direction: column;
+        
+           text-align: start;
+            justify-content: center;
+           
+            
+           
+            
+        }
+        .empty {
+            flex: 1;
+            background: rgb(196, 191, 191);
+           
+        }
+        .url {
+            color: gray;
+            align-items: flex-start;
+           
+            text-align: left;
+        }
+
+      </style>
+</head>
+<body>
+    <div class="preview">
+        <div
+        class="profile-pc"><div><img class="cat-pic" src="profile-pc.jpg"></div>
+        </div>
+        <div class="preview-info"><p><strong>supersimple.dev</strong>
+            <span class="blur">@SuperSimpleDev
+
+      </span></p>
+        <p>What is backend web development?A complete
+            overview.New video is up!
+        </p></div>
+       
+        
+    </div>
+        <button class="split-btn">
+                <span class="empty"></span>
+                <p class="text">
+                    <span class="url">youtube.com</span>
+                   Backend web development-a
+                    complete overview(2021)
+                </p>
+
+
+            </button>
+        
+</body>
+</html>
